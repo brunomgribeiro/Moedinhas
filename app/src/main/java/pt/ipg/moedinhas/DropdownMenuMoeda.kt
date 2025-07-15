@@ -1,17 +1,11 @@
 package pt.ipg.moedinhas
 
-import androidx.compose.runtime.Composable
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.material3.DropdownMenu
-import androidx.compose.material3.DropdownMenuItem
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.Text
+import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-
 
 @Composable
 fun DropdownMenuMoeda(
@@ -24,7 +18,9 @@ fun DropdownMenuMoeda(
         "EUR" to "🇪🇺",
         "USD" to "🇺🇸",
         "GBP" to "🇬🇧",
-        "JPY" to "🇯🇵"
+        "JPY" to "🇯🇵",
+        "BRL" to "🇧🇷",
+        "AUD" to "🇦🇺"
     )
 
     var expandido by remember { mutableStateOf(false) }
